@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Qur'an Teaching Registration</title>
+<link rel="shortcut icon" href="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg">
+
+<style>
+    
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(6, 56, 219, 0.9), rgba(248, 134, 4, 0.9));
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: gold;
+  opacity: 0,65;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.logo {
+       width: 80px;
+       height: 50px;
+       margin-left: 250px;
+       
+
+        }
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+.disclaimer {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+    
+    
+    
+</style>
+</head>
+<body>
+<div class="container">
+
+  <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+  <h2>Join Our Online Qur'an Teaching Program!</h2>
+  <p>Unlock the beauty and wisdom of the Qur'an with our comprehensive online teaching program. Sign up now and embark on a journey of spiritual enlightenment and understanding!</p>
+  <form id="registrationForm" action="https://formspree.io/f/xgegoddp" method="POST">
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="5" max="100" required>
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="experience">Qur'an Experience Level</label>
+      <select id="experience" name="experience" required>
+        <option value="">Select Experience Level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+    <input type="submit" value="Sign Up">
+  </form>
+  <p class="disclaimer">Your information will be kept confidential and will only be used for the purpose of the Qur'an teaching program.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qur'an Quiz</title>
+    <link rel="shortcut icon" href="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #5e4444;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2 {
+            color: gold;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            background: linear-gradient(rgba(6, 56, 219, 0.9), rgba(248, 134, 4, 0.9));
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 70px auto;
+            max-width: 550px;
+            
+            display: none;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+
+        .contact-button:hover {
+            background-color: #d6ec09;
+        }
+        
+        .navigation {
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .navigation a:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        .grade {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+        .logo {
+       width: 80px;
+       height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="tab active" id="question1">
+
+        <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+        <h1>Question 1</h1>
+        <h2>Listen and choose the right chapter where the recitation can be found</h2>
+    
+        <audio controls>
+            <source src="audio/1-002030.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <select>
+            <option value="1">Al-baqarah</option>
+            <option value="2">Al-Ghaafir</option>
+            <option value="3">Al-Inshiqaaq</option>
+            <option value="4">At-Tauba</option>
+        </select>
+        
+    </div>
+    
+    
+    <div class="tab" id="question2">
+        <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+
+    <h2>Question 2</h2>
+    <audio controls>
+        <source src="audio/2-005030.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-an'am</option>
+        <option value="2">Al-ma'idah</option>
+        <option value="3">Al-isra'</option>
+        <option value="4">At-Tawbah</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question3">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+
+    <h2>Question 3</h2>
+    <audio controls>
+        <source src="audio/3-008015.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Ta-ha</option>
+        <option value="2">Al-anbiya'</option>
+        <option value="3">Al-anfal</option>
+        <option value="4">At-tin</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question4">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 4</h2>
+    <audio controls>
+        <source src="audio/4-09001.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Yusuf</option>
+        <option value="2">Al-Ghaafir</option>
+        <option value="3">Maryam</option>
+        <option value="4">At-tawbah</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question5">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 5</h2>
+    <audio controls>
+        <source src="audio/5-012036.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Yusuf</option>
+        <option value="2">Al-hajj</option>
+        <option value="3">An-nur</option>
+        <option value="4">At-tahrim</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question6">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 6</h2>
+    <audio controls>
+        <source src="audio/6-012100.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">An-najm</option>
+        <option value="2">Yusuf</option>
+        <option value="3">Fatir</option>
+        <option value="4">Al-ahzab</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question7">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 7</h2>
+    <audio controls>
+        <source src="audio/7-014037.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Ya-sin</option>
+        <option value="2">luqman</option>
+        <option value="3">Ibrahim</option>
+        <option value="4">As-saffat</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question8">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 8</h2>
+    <audio controls>
+        <source src="audio/8-014040.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Az-zumar</option>
+        <option value="2">Al-furqon</option>
+        <option value="3">Al-hajj</option>
+        <option value="4">Ibrahim</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question9">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 9</h2>
+    <audio controls>
+        <source src="audio/9-021015.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-ambiya'</option>
+        <option value="2">Ash-shu'ara'</option>
+        <option value="3">Al-qasas</option>
+        <option value="4">At-ankabut</option>
+    </select>
+    
+</div>
+
+
+<div class="tab" id="question10">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 10</h2>
+    <audio controls>
+        <source src="audio/10-022040.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-Qalam</option>
+        <option value="2">Al-hajj</option>
+        <option value="3">Al-Inshiqaaq</option>
+        <option value="4">At-Tauba</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question11">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 11</h2>
+    <audio controls>
+        <source src="audio/11-036030.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Ar-rum</option>
+        <option value="2">fatir</option>
+        <option value="3">Ya-sin</option>
+        <option value="4">Ad-dukhan</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question12">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 12</h2>
+    <audio controls>
+        <source src="audio/12-047028.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-ahqaf</option>
+        <option value="2">Al-fath</option>
+        <option value="3">Qaf</option>
+        <option value="4">Muhammad</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question13">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 13</h2>
+    <audio controls>
+        <source src="audio/13-048015.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-fath</option>
+        <option value="2">Al-Ghaafir</option>
+        <option value="3">At-tur</option>
+        <option value="4">An-najm</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question14">
+
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 14</h2>
+    <audio controls>
+        <source src="audio/14-049010.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-Qalam</option>
+        <option value="2">Al-hujurat</option>
+        <option value="3">Al-qamar</option>
+        <option value="4">Ar-rahman</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question15">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 15</h2>
+    <audio controls>
+        <source src="audio/15-050030.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-hujurat</option>
+        <option value="2">Al-Ghaafir</option>
+        <option value="3">Qaf</option>
+        <option value="4">At-tur</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question16">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 16</h2>
+    <audio controls>
+        <source src="audio/16-069015.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-qalam</option>
+        <option value="2">Al-ma'arij</option>
+        <option value="3">Al-Inshiqaaq</option>
+        <option value="4">Al-haaqqah</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question17">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 17</h2>
+    <audio controls>
+        <source src="audio/20-107001.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-ma'un</option>
+        <option value="2">Al-asr</option>
+        <option value="3">Al-adiyat</option>
+        <option value="4">At-layl</option>
+    </select>
+    
+</div>
+
+
+<div class="tab" id="question18">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 18</h2>
+    <audio controls>
+        <source src="audio/19-104008.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-alaq</option>
+        <option value="2">Al-humazah</option>
+        <option value="3">Al-kawthar</option>
+        <option value="4">An-nasr</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question19">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 19</h2>
+    <audio controls>
+        <source src="audio/18-091015.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Quraysh</option>
+        <option value="2">Al-kaafirun</option>
+        <option value="3">Ash-shams</option>
+        <option value="4">Al-falaq</option>
+    </select>
+    
+</div>
+
+<div class="tab" id="question20">
+    <img class="logo" src="audio\Premium Photo _ 3d golden arabic calligraphy quran on dark background.jpeg" alt="logo">
+    <h2>Question 20</h2>
+    <audio controls>
+        <source src="audio/17-072020.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <select>
+        <option value="1">Al-qiyamah</option>
+        <option value="2">Al-muzammil</option>
+        <option value="3">Al-insan</option>
+        <option value="4">Al-jinn</option>
+    </select>
+    <button onclick="calculateScore()" class="submit-button">Submit Answers</button>
+    <a href="contact.html"><button class="contact-button">contact us</button></a>
+</div>
+
+
+    <!-- Add your question tabs here -->
+    
+    
+    
+
+    <div class="navigation">
+        <a href="#" onclick="prevQuestion()">Previous</a>
+        <a href="#" onclick="nextQuestion()">Next</a>
+        
+    </div>
+    
+    
+    
+    <div id="result">
+        
+    </div>
+<div class="grade" id="grade"></div>
+
+
+   
+
+    <script>
+        
+    let currentQuestion = 1;
+    let score = 0;
+
+    // Placeholder array for correct options
+    const correctOption = ["1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4"];
+
+    function prevQuestion() {
+        if (currentQuestion > 1) {
+            document.getElementById(`question${currentQuestion}`).classList.remove('active');
+            currentQuestion--;
+            document.getElementById(`question${currentQuestion}`).classList.add('active');
+        }
+    }
+
+    function nextQuestion() {
+        if (currentQuestion < 20) {
+            document.getElementById(`question${currentQuestion}`).classList.remove('active');
+            currentQuestion++;
+            document.getElementById(`question${currentQuestion}`).classList.add('active');
+        }
+    }
+
+    function calculateScore() {
+        // Calculate score based on correct answers
+        score = 0;
+        for (let i = 1; i <= 20; i++) {
+            let selectedOption = document.getElementById(`question${i}`).querySelector('select').value;
+            if (selectedOption === correctOption[i - 1]) {
+                score++;
+            }
+        }
+
+        // Display score
+        document.getElementById('result').innerHTML = `Your score: ${score}/20`;
+
+        // Determine grade
+        let grade;
+        if (score >= 18) {
+            grade = 'Excellent';
+        } else if (score >= 15) {
+            grade = 'Very Good';
+        } else if (score >= 12) {
+            grade = 'Good';
+        } else if (score >= 8) {
+            grade = 'Fair';
+        } else {
+            grade = 'Needs Improvement';
+        }
+
+        // Display grade
+        document.getElementById('grade').innerHTML = `Grade: ${grade}`;
+    }
+    
+    
+    
+    
+</script>
+    </script>
+</body>
+</html>
